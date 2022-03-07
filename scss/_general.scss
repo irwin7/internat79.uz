@@ -9,6 +9,8 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -18,11 +20,19 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  font-family: "Arial", sans-serif;
+  font-family: $font-opne-sans;
   background-color: #fff;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
 }
