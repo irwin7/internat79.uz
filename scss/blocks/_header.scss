@@ -1,5 +1,5 @@
 .hero__header{
-  background-color: aqua
+  background-color: #fff;
 }
 .header {
   @include df;
@@ -8,6 +8,7 @@
   z-index: 10;
 
   &__logo-link {
+    font-family: $font-lobster;
     margin-right: auto;
     font-weight: 500;
     font-size: 40px;
@@ -51,7 +52,16 @@
     padding: 8px 16px;
   }
 }
-
+.scrolled{
+  .hero__header{
+    background-color: #fff;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+}
 @media screen and (max-width: 768px) {
   .header{
     flex-wrap: wrap;
