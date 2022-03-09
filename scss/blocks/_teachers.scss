@@ -1,0 +1,79 @@
+.teachers {
+  padding-top: 50px;
+
+  &__title {
+    font-family: $font-lobster;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+
+    span{
+      color: $color-primary;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    width: 25%;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__img{
+    margin-bottom: 1px;
+  }
+
+  &__texts{
+    padding: 15px;
+    background-color: #31C3B0;
+  }
+
+  &__static-title {
+    font-family: $font-lobster;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.4;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  &__about {
+    font-family: $font-lora;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .teachers{
+    &__list{
+      flex-wrap: wrap;
+    }
+    &__item{
+      width: 50%;
+      margin-bottom: 30px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .teachers{
+    &__list{
+      justify-content: center;
+    }
+    &__item{
+      width: 400px;
+    }
+  }
+}
