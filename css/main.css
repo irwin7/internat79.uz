@@ -1311,4 +1311,155 @@ a {
     height: 330px;
   }
 }
+
+.gallery__title {
+  font-family: "Lobster Two", cursive;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.gallery__title span {
+  color: #FF5252;
+}
+
+.gallery__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gallery__item {
+  width: 32%;
+  border-radius: 12px;
+  height: 270px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.gallery__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery__item {
+    width: 100%;
+    height: 350px;
+  }
+}
+
+#footer {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../../img/footer-bg.jpg");
+  position: relative;
+}
+
+#footer::before {
+  content: "";
+  background-color: rgba(17, 17, 17, 0.9);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.footer {
+  position: relative;
+  z-index: 3;
+  padding: 50px 0;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer__item {
+  width: 25%;
+  padding: 0 12px;
+}
+
+.footer__address {
+  font-family: "Lora", serif;
+  line-height: 1.7;
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.footer__contact {
+  padding: 5px 10px;
+}
+
+.footer__contact:nth-child(2) span {
+  color: #96D81F;
+}
+
+.footer__contact:nth-child(3) span {
+  color: #FF9800;
+}
+
+.footer__icn {
+  display: inline-block;
+  margin-right: 5px;
+  color: #FF5252;
+}
+
+.footer__contact-link {
+  color: #808080;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.footer__title {
+  font-family: "Lobster Two", cursive;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer__inner-item {
+  font-family: "Lora", serif;
+  line-height: 1.7;
+  color: #666;
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom: 1px dashed #404040;
+  padding: 8px;
+  padding-left: 15px;
+}
+
+.footer__inner-link {
+  font-family: "Lora", serif;
+  line-height: 1.7;
+  color: #666;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

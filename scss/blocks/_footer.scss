@@ -1,0 +1,112 @@
+#footer{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../img/footer-bg.jpg');
+  position: relative;
+
+  &::before{
+    content: "";
+    background-color: rgba(17, 17, 17, 0.9);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+  }
+}
+.footer {
+  position: relative;
+  z-index: 3;
+  padding: 50px 0;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 25%;
+    padding: 0 12px;
+  }
+
+  &__address {
+    font-family: $font-lora;
+    line-height: 1.7;
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  &__contacts {
+  }
+
+  &__contact {
+    padding: 5px 10px;
+
+    &:nth-child(2){
+      span{
+        color: #96D81F;
+      }
+    }
+    &:nth-child(3){
+      span{
+        color: #FF9800;
+      }
+    }
+  }
+
+  &__icn {
+    display: inline-block;
+    margin-right: 5px;
+    color: $color-primary;
+  }
+
+  &__contact-link {
+    color: #808080;    
+    line-height: 1.7;
+    font-size: 15px;
+  }
+
+  &__title {
+    font-family: $font-lobster;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  &__inner-list {
+  }
+
+  &__inner-item {
+    font-family: $font-lora;
+    line-height: 1.7;
+    color: #666;
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: 1px dashed #404040;
+    padding: 8px;
+    padding-left: 15px;
+  }
+
+  &__inner-link {
+    font-family: $font-lora;
+    line-height: 1.7;
+    color: #666;
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer{
+
+    &__item{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}
