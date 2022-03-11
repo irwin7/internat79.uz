@@ -1,0 +1,91 @@
+.activity {
+  @include df;
+  padding: 15px;
+
+  &__about {
+    width: 60%;
+    padding-right: 15px;
+    padding-left: 20px;
+  }
+
+  &__title {
+    @include title;
+    color: #00bcd4;
+    text-transform: capitalize;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-family: $font-lora;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    line-height: 1.4;
+    color: #666;
+  }
+
+  &__static-text {
+    font-family: $font-lora;
+    line-height: 1.7;
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    @include df;
+    margin-bottom: 10px;
+  }
+
+  &__inner-text{
+    font-family: $font-lora;
+    line-height: 1.7;
+    color: #666;
+    font-size: 15px;
+  }
+
+  &__icn{
+    display: inline-block;
+    color: #00BCD4;
+    margin-right: 5px;
+  }
+
+  &__imgs {
+    width: 40%;
+    padding-left: 15px;
+    height: 340px;
+  }
+
+  &__img {
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .activity {
+    flex-wrap: wrap;
+    &__about {
+      width: 100%;
+      padding-right: 0;
+      padding-left: 0;
+      margin-bottom: 20px;
+    }
+    &__imgs {
+      width: 100%;
+      padding-left: 0;
+      height: 600px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .activity {
+    flex-wrap: wrap;-bottom: 10px;
+
+    &__imgs {
+      padding: 0;
+      height: 330px;
+    }
+  }
+}

@@ -17,6 +17,13 @@
       rel="stylesheet"
       href="./icons/i7e/pe-icon-7-stroke/css/pe-icon-7-stroke.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css"
+      integrity="sha512-E+53kXnJyuZFSz75xSmTfCpUNj3gp9Bd80TeQQMTPJTVWDRHPOpEYczGwWtsZXvaiz27cqvhdH8U+g/NMYua3A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- ANIMATE -->
     <link
       rel="stylesheet"
@@ -269,7 +276,11 @@
             <h3 class="teachers__title">Bizning <span>O'qituvchilar</span></h3>
             <ul class="teachers__list">
               <li class="teachers__item">
-                <img class="teachers__img" src="http://html.kodesolution.live/s/kidspro/v2.1/demo/images/team/team5.jpg" alt="teacher">
+                <img
+                  class="teachers__img"
+                  src="http://html.kodesolution.live/s/kidspro/v2.1/demo/images/team/team5.jpg"
+                  alt="teacher"
+                />
                 <div class="teachers__texts">
                   <p class="teachers__static-title">David Jakaria</p>
                   <p class="teachers__about">
@@ -279,7 +290,11 @@
                 </div>
               </li>
               <li class="teachers__item">
-                <img class="teachers__img" src="http://html.kodesolution.live/s/kidspro/v2.1/demo/images/team/team6.jpg" alt="teacher">
+                <img
+                  class="teachers__img"
+                  src="http://html.kodesolution.live/s/kidspro/v2.1/demo/images/team/team6.jpg"
+                  alt="teacher"
+                />
                 <div class="teachers__texts">
                   <p class="teachers__static-title">David Jakaria</p>
                   <p class="teachers__about">
@@ -289,7 +304,11 @@
                 </div>
               </li>
               <li class="teachers__item">
-                <img class="teachers__img" src="http://html.kodesolution.live/s/kidspro/v2.1/demo/images/team/team7.jpg" alt="teacher">
+                <img
+                  class="teachers__img"
+                  src="http://html.kodesolution.live/s/kidspro/v2.1/demo/images/team/team7.jpg"
+                  alt="teacher"
+                />
                 <div class="teachers__texts">
                   <p class="teachers__static-title">David Jakaria</p>
                   <p class="teachers__about">
@@ -299,7 +318,11 @@
                 </div>
               </li>
               <li class="teachers__item">
-                <img class="teachers__img" src="http://html.kodesolution.live/s/kidspro/v2.1/demo/images/team/team8.jpg" alt="teacher">
+                <img
+                  class="teachers__img"
+                  src="http://html.kodesolution.live/s/kidspro/v2.1/demo/images/team/team8.jpg"
+                  alt="teacher"
+                />
                 <div class="teachers__texts">
                   <p class="teachers__static-title">David Jakaria</p>
                   <p class="teachers__about">
@@ -307,6 +330,97 @@
                     elit.
                   </p>
                 </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="activities">
+        <div class="container">
+          <div class="activities">
+            <header class="activities__header">
+              <h3 class="activities__title">
+                Bizning <span>Mashg'ulotlar</span>
+              </h3>
+            </header>
+            <div class="activities__inner">
+              <ul class="activities__control-list">
+                <li
+                  class="activities__control activities__control--active"
+                  activityType="music"
+                >
+                  <span class="activities__control-icn"
+                    ><i class="fa-solid fa-music"></i
+                  ></span>
+                  <p class="activities__control-text">Musiqa</p>
+                </li>
+                <li class="activities__control" activityType="learn">
+                  <span class="activities__control-icn"
+                    ><i class="fa-solid fa-graduation-cap"></i
+                  ></span>
+                  <p class="activities__control-text">O'qish</p>
+                </li>
+                <li class="activities__control" activityType="painting">
+                  <span class="activities__control-icn"
+                    ><i class="fa-solid fa-paintbrush"></i
+                  ></span>
+                  <p class="activities__control-text">Rassomlik</p>
+                </li>
+                <li class="activities__control" activityType="sport">
+                  <span class="activities__control-icn"
+                    ><i class="fa-solid fa-basketball"></i
+                  ></span>
+                  <p class="activities__control-text">Sport</p>
+                </li>
+                <li class="activities__control" activityType="playground">
+                  <span class="activities__control-icn"
+                    ><i class="fa-solid fa-trophy"></i
+                  ></span>
+                  <p class="activities__control-text">Maydoncha</p>
+                </li>
+              </ul>
+              <div class="activities__hero activity">
+                <template id="activityTemplate">
+                  <div class="activity__about">
+                    <p class="activity__title"></p>
+                    <p class="activity__text"></p>
+                    <p class="activity__static-text"></p>
+                    <ul class="activity__advantages">
+                      <li class="activity__item">
+                        <span class="activity__icn"><i class="fa-solid fa-heart"></i></span>
+                        <span class="activity__inner-text"></span>
+                      </li>
+                      <li class="activity__item">
+                        <span class="activity__icn"><i class="fa-solid fa-heart"></i></span>
+                        <span class="activity__inner-text"></span>
+                      </li>
+                      <li class="activity__item">
+                        <span class="activity__icn"><i class="fa-solid fa-heart"></i></span>
+                        <span class="activity__inner-text"></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="activity__imgs">
+                    <img class="activity__img" src="" alt="activity image" />
+                  </div>
+                </template>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          class="kinderg__img-bg"
+          src="./img/kinderg-bg.png"
+          alt="kindergarten"
+        />
+      </section>
+      <section id="galery">
+        <div class="container">
+          <div class="galery">
+            <p class="galery__title"></p>
+            <ul class="galery__list">
+              <li class="galery__item">
+                <img src="" alt="" class="galery__img">
               </li>
             </ul>
           </div>
@@ -327,6 +441,7 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <!-- JS -->
+    <script src="js/activity-data.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

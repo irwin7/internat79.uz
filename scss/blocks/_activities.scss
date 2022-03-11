@@ -1,0 +1,82 @@
+#activities{
+  @include bg;
+  background-image: url("../../img/activity-bg.jpg");
+}
+.activities {
+  padding-bottom: 50px;
+
+  &__inner{
+    background-color: #fff;
+    border: 3px solid #eeeeee;
+  }
+
+  &__title {
+    @include title;
+  }
+
+  &__control-list {
+    width: 100%;
+    @include df;
+    justify-content: space-between;
+  }
+
+  &__control {
+    width: 19.99%;
+    @include df;
+    flex-direction: column;
+    justify-content: center;
+    padding: 35px 0;    
+    background-color: #00BCD4;
+    border: 3px solid transparent;
+    border-right-color: #eee;
+    cursor: pointer;
+    color: #fff;
+    transition: $transi;
+
+    &:nth-child(2){
+      background-color: $color-primary;
+    }
+    &:nth-child(3){
+      background-color: #FEC02A;
+    }
+    &:nth-child(4){
+      background-color: #31C3B0;
+    }
+    &:nth-child(5){
+      background-color: #FF9800;
+    }
+
+    &:hover{
+      border: 3px solid #eee;
+    }
+  }
+
+  &__control--active{
+    color: #222;
+    background-color: #f8f8f8 !important;
+  }
+
+  &__control-icn {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  &__control-text {
+    font-size: 13px;
+    line-height: 1.4;
+    text-transform: uppercase;
+  }
+}
+@media screen and (max-width: 768px) {
+  .activities{
+    &__control{
+      padding: 25px 0;
+    }
+    &__control-icn{
+      font-size: 27px;
+    }
+    &__control-text{
+      display: none;
+    }
+  }
+}
