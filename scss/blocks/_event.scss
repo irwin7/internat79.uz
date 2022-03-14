@@ -1,0 +1,20 @@
+.event {
+  padding: 50px 0;
+
+  &__title {
+    @include title;
+  }
+
+  &__static-title {
+    font-size: 20px;
+    font-family: $font-lobster;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #000;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    @include normText;
+  }
+}

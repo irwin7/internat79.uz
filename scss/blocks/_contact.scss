@@ -1,0 +1,69 @@
+#contact{
+  @include bg;
+  background-image: url('../../img/about-bg.jpg');
+}
+
+.contact{
+  min-height: 100vh;
+  padding-top: 50px;
+
+  &__title {
+    @include title;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  &__static-title {
+    font-size: 20px;
+    font-family: $font-lobster;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    @include normText;
+    color: #fff;
+    max-width: 650px;
+  }
+
+  &__inner-title {
+    @include staticTitle;
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
+
+  &__list {
+  }
+
+  &__item {
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    @include df;
+    font-family: $font-lora;
+    line-height: 1.7;
+    font-size: 14px;
+    color: #d3d3d3;
+    transition: $transi;
+
+    &:hover{
+      color: #fff
+    }
+  }
+
+  &__icn {
+    @include df;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: $color-primary;
+    color: #fff;
+    font-size: 10px;
+    margin-right: 10px;
+  }
+}

@@ -45,10 +45,7 @@
   }
 
   &__text {
-    font-family: $font-lora;
-    line-height: 1.7;
-    font-size: 15px;
-    margin-bottom: 10px;
+    @include normText;
   }
 
   &__btn {
