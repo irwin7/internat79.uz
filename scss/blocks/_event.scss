@@ -12,9 +12,22 @@
     line-height: 1.4;
     color: #000;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   &__text {
     @include normText;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .event {
+    &__text {
+      @include normText;
+      width: 90%;
+      margin: 0 auto;
+    }
   }
 }
